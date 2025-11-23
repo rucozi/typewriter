@@ -1,5 +1,37 @@
-<title>Typewriter ID</title>
-
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+    <title>Typewriter ID</title>
+</head>
 <body>
-This is a typewriter identification tool
+    This is a typewriter identification tool.
+
+    <!-- Basic input form -->
+    <form id="typewriter-form" aria-label="Typewriter identification form">
+      <div>
+        <label for="serial">Serial number</label>
+        <input type="text" id="serial" name="serial" placeholder="e.g. SN12345" />
+      </div>
+
+      <div>
+        <label for="make-search">Search makes</label>
+        <input type="search" id="make-search" name="make-search" placeholder="Type to filter makes" aria-controls="make" />
+      </div>
+
+      <div>
+        <label for="make">Make</label>
+        <select id="make" name="make">
+          <option value="all" selected>All Makes</option>
+          <option value="unknown">I don't know</option>
+          <option value="corona">Corona</option>
+          <option value="acme">ACME</option>
+          <option value="bennet">Bennet</option>
+        </select>
+      </div>
+
+      <div>
+        <button type="submit">Search</button>
+      </div>
+    </form>
+    
 </body>
